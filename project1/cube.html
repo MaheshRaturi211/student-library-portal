@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+.cube {
+  width: $size;
+  height: $size;
+  position: relative;
+   perspective: 600px;
+     transform-style: preserve-3d;
+	 transform: rotateY(180deg);
+	 
+}
+.cube-face {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: red;
+  opacity: 0.5;
+}
+.cube-face-front {
+  color: blue;
+  transform: translate3d(0, 0, 20px);
+}
+.cube-face-front {
+  transform: rotateY(40deg);
+}
+.cube-face-front {
+  transform: translate3d(0, 0, $size/2);
+}
+.cube-face-back {
+  transform: rotateY(180deg) translate3d(0, 0, $size/2);
+}
+.cube-face-left {
+  transform: rotateY(-90deg) translate3d(0, 0, $size/2);
+}
+.cube-face-right {
+  transform: rotateY(90deg) translate3d(0, 0, $size/2);
+}
+.cube-face-top {
+  transform: rotateX(90deg) translate3d(0, 0, $size/2);
+}
+.cube-face-bottom {
+  transform: rotateX(-90deg) translate3d(0, 0, $size/2);
+}
+
+</style>
+</head>
+<body>
+<div class="cube">
+    <div class="cube-face  cube-face-front"></div>
+    <div class="cube-face  cube-face-back"></div>
+    <div class="cube-face  cube-face-left"></div>
+    <div class="cube-face  cube-face-right"></div>
+    <div class="cube-face  cube-face-top"></div>
+    <div class="cube-face  cube-face-bottom"></div>
+ </div>
+</body>
+</html>

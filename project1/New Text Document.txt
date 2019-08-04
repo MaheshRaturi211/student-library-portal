@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+body{
+    margin:0;
+	padding:0;
+	background-color:grey;
+}
+.image{
+    width:100%;
+	height:100%;
+	position:fixed;
+}
+.menu{
+    position:absolute;
+	top:30px;
+	left:500px;
+}
+.menu a{
+    display:inline;
+	padding:15px 24px;
+	color:black;
+	text-decoration:none;
+	font-size:20px;
+	font-family:verdana;
+}
+.menu a:hover{
+    border-bottom:3px solid black;
+	cursor:pointer;
+}
+</style>
+</head>
+<body>
+<div class="menu">
+<a href="index.html" class="link"><b>Home</b></a>
+<a href="login.html" target="_self" class="link"><b>Login</b></a>
+<a href="register.php" class="link" target="_self"><b>Register</b></a>
+<a class="link"><b>Contact Us</b></a>
+<a class="link"><b>About Us</b></a>
+</div>
+</body>
+</html>
